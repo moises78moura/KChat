@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265653775651",
+    "firebase_url": "https://kchat-c3ef7.firebaseio.com",
+    "project_id": "kchat-c3ef7",
+    "storage_bucket": "kchat-c3ef7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265653775651:android:078f4d1907232b90483096",
+        "android_client_info": {
+          "package_name": "br.com.mmt.kchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265653775651-1moj5u3tcv4s3mushq6jtgoeah23l4h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKI6c8-_fRbn10kL3WbA_CYYxRSRw2cxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265653775651-1moj5u3tcv4s3mushq6jtgoeah23l4h9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

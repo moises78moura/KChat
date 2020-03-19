@@ -27,15 +27,15 @@
         android:id="@+id/edit_text_nome"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
         android:ems="10"
+        android:hint="@string/informe_o_nome"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="@string/informe_o_nome"
-        android:background="@drawable/bg_edittext_rounded"
-        app:layout_constraintEnd_toEndOf="@+id/text_cadastro"
-        app:layout_constraintStart_toStartOf="@+id/text_cadastro"
-        app:layout_constraintTop_toBottomOf="@+id/text_cadastro" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_img" />
 
     <EditText
         android:id="@+id/edit_cad_email"
@@ -64,15 +64,16 @@
         app:layout_constraintStart_toStartOf="@+id/edit_cad_email"
         app:layout_constraintTop_toBottomOf="@+id/edit_cad_email" />
 
+
     <EditText
         android:id="@+id/edit_confirm_pass"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/confirme_a_senha"
         android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="@string/confirme_a_senha"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/edit_cad_password"
         app:layout_constraintStart_toStartOf="@+id/edit_cad_password"
         app:layout_constraintTop_toBottomOf="@+id/edit_cad_password" />
@@ -82,15 +83,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/cadastrar"
         android:background="@drawable/bg_button_rounded"
+        android:text="@string/cadastrar"
         android:textAllCaps="true"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/edit_confirm_pass"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/edit_confirm_pass"
         app:layout_constraintTop_toBottomOf="@+id/edit_confirm_pass" />
-
 
     <Button
         android:id="@+id/button_cancelar"
@@ -103,7 +104,37 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/button_cadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button_cadastrar"
         app:layout_constraintTop_toBottomOf="@+id/button_cadastrar" />
+
+    <Button
+        android:id="@+id/btn_add_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/foto"
+        android:background="@drawable/bg_button_rounded_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cadastro" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:civ_border_color="@android:color/holo_green_dark"
+        app:civ_border_width="2dp"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_img"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_img"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add_img"
+        app:layout_constraintStart_toStartOf="@+id/btn_add_img"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
